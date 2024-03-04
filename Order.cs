@@ -13,6 +13,7 @@ namespace PizzaStore
 
         public Order(Pizza pizza, Customer customer)
         {
+            c = customer;
             p = pizza;
             TaxPct = 25.0;
             DeliveryCosts = 40.0;
@@ -32,7 +33,7 @@ namespace PizzaStore
 
         public override string ToString()
         {
-            return $"Pizza: {p.Name} - TaxPct: {TaxPct} - Delivery cost: {DeliveryCosts} - Total: {CalculateTotalPrice()}";
+            return $"Order information: {c.Name} - Pizza: {p.Name} - Moms: {TaxPct}% - Forsendelse pris: {DeliveryCosts}kr. - Total: {CalculateTotalPrice()}";
         }
 
         public double CalculateTotalPrice()

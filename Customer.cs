@@ -11,10 +11,10 @@ namespace PizzaStore
 
         public Customer(string name, string email, string adresse, string tlfnr)
         {
-            _name = "";
-            _email = "";
-            _adresse = "";
-            _tlfnr = "";
+            _name = name;
+            _email = email;
+            _adresse = adresse;
+            _tlfnr = tlfnr;
         }
 
         public string Name
@@ -40,5 +40,12 @@ namespace PizzaStore
             get { return _tlfnr; }
             set { _tlfnr = value; }
         }
+
+        public override string ToString()
+        {
+            return $"Navn: {Name} - Telefon nummer: {Tlfnr} - Email: {Email} - Adresse: {Adresse}";
+        }
+
+
     }
 }
