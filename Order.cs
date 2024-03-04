@@ -33,7 +33,7 @@ namespace PizzaStore
 
         public override string ToString()
         {
-            return $"Order information: {c.Name} - Pizza: {p.Name} - Moms: {TaxPct}% - Forsendelse pris: {DeliveryCosts}kr. - Total: {CalculateTotalPrice()}";
+            return $"Order information: {c.Name} - Pizza: {p.Name} - {TaxPct}% moms - Forsendelse pris: {DeliveryCosts}kr. - Total: {CalculateTotalPrice()}";
         }
 
         public double CalculateTotalPrice()

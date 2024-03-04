@@ -13,9 +13,9 @@ namespace PizzaStore
             Butik b = new Butik("Big Mammas Pizzeria", "Frederiksværksgade 4, 3400 Hillerød", "1234 5678");
 
 
-            Pizza p1 = new Pizza("Margherita", 65);
-            Pizza p2 = new Pizza("Calzone", 95);
-            Pizza p3 = new Pizza("Fire årstider", 105);
+            Pizza p1 = new Pizza("Margherita", "Tomat og ost", 80);
+            Pizza p2 = new Pizza("Calzone", "Tomat, ost, skinke og champignoner", 98);
+            Pizza p3 = new Pizza("Italiana","Tomat, ost, løg og kødsauce", 93);
 
             Customer c1 = new Customer("Jens","Jens@mail.com","vejnavn og nummer","1234 5678");
             Customer c2 = new Customer("Moman", "Moman@mail.com", "vejnavn og nummer", "1234 5678");
