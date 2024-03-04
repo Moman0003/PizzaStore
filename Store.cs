@@ -6,8 +6,12 @@ namespace PizzaStore
 {
     class Store
     {
+
+
         public void Start()
         {
+            Butik b = new Butik("Big Mammas Pizzeria", "Frederiksværksgade 4, 3400 Hillerød", "1234 5678");
+
 
             Pizza p1 = new Pizza("Margherita", 65);
             Pizza p2 = new Pizza("Calzone", 95);
@@ -38,6 +42,11 @@ namespace PizzaStore
             Console.WriteLine(c1);
             Console.WriteLine(c2);
             Console.WriteLine(c3);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine(b);
 
         }
     }
